@@ -3,6 +3,10 @@ GEM
   specs:
     addressable (2.4.0)
     ansi (1.5.0)
+    better_errors (2.1.1)
+      coderay (>= 1.0.0)
+      erubis (>= 2.6.6)
+      rack (>= 0.9.0)
     builder (3.2.2)
     capybara (2.8.0)
       addressable
@@ -11,6 +15,7 @@ GEM
       rack (>= 1.0.0)
       rack-test (>= 0.5.4)
       xpath (~> 2.0)
+    coderay (1.1.1)
     cucumber (2.4.0)
       builder (>= 2.1.2)
       cucumber-core (~> 1.5.0)
@@ -24,6 +29,7 @@ GEM
     cucumber-wire (0.0.1)
     diff-lcs (1.2.5)
     docile (1.1.5)
+    erubis (2.7.0)
     gherkin (4.0.0)
     hirb (0.7.3)
     json (2.0.2)
@@ -76,6 +82,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  better_errors
   capybara
   cucumber
   rack-test
