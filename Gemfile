@@ -2,9 +2,9 @@
 source "https://rubygems.org"
 
 gem "sinatra"
-gem "cucumber"
-gem "rack-test"
-gem "webrat"
-gem "rspec"
-gem "simplecov"
-gem "simplecov-console"
+gem 'rack-test'
+gem 'rspec'
+gem 'simplecov'
+gem 'simplecov-console'
+gem 'cucumber'
+gem 'capybara'
