@@ -22,17 +22,19 @@ When /^I press "(.*)"$/ do |name|
   click_button(name)
 end
 
+#Then I should see the image "google.png"
+#<img src="google.png" alt="google">
 Then(/^I should see the image "(.*?)"$/) do |image_name|
-  page.should have_xpath("//img[@src=\"#{image_name}\"]")
+  expect(page).to have_xpath("//img[@src=\"#{image_name}\"]")
 end
 
 # Check the content of a specific table cell
 # To use this, every cell should have a unique ID like XX:YY (1:3)
-Then(/^I should see "(.*?)" at the cell (\d+), (\d+)$/) do |text, x, y|
-  #cell = "#{x}:#{y}"
-  expect(find("#"+"#{x}:#{y}").value).to match /#{text}/m
-  pending
+Then(/^I should see "(.*?)" at the cell (\d+),(\d+)$/) do |text, x, y|
+  cell = "##{x}-#{y}"
+  expect(find(cell).text).to match /#{text}/m
 end
+
 
 #other options:
 #find_field('First Name').value
