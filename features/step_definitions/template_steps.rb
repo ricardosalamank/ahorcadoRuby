@@ -14,8 +14,16 @@ Then /^I should see "(.*)"$/ do |text|
   expect(page.body).to match /#{text}/m
 end
 
-When /^I provide "(.*)" as "(.*)"$/ do |field, value|
+Then /^I select "(.*)"$/ do |text|
+  select(text,:from => "select")
+end
+
+When /^I fill "(.*)" with "(.*)"$/ do |field, value|
   fill_in(field, :with => value)
+end
+
+When /^I fill the hidden element "(.*)" with "(.*)"$/ do |field_id, value|
+  find("##{field_id}",:visible => false).set value
 end
 
 When /^I press "(.*)"$/ do |name|
