@@ -22,7 +22,7 @@ class Game
 		end
 
 		if falta == true
-			@letrasmal += letra
+			@letrasmal += letra + "-"
 			@mensaje += ARRFALTAS[@faltas]
 			@faltas += 1
 		end
