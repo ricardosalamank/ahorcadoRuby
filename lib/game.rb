@@ -8,6 +8,7 @@ class Game
 	def initialize
 		@faltas = 0
 		@mensaje = ""
+		@letrasmal = ""
 		@encontrados = ["-", "-", "-", "-", "-"]
 	end
 
@@ -21,20 +22,23 @@ class Game
 		end
 
 		if falta == true
+			@letrasmal += letra
 			@mensaje += ARRFALTAS[@faltas]
 			@faltas += 1
 		end
-	
 	end
 
 	def resultado 
 		resultado = @encontrados.join()
 		return resultado
-		
 	end
 
 	def resultado_faltas
 		return @mensaje
+	end
+
+	def resultado_letrasmal
+		return @letrasmal
 	end
 
 	def reiniciar
