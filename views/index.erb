@@ -12,11 +12,14 @@
 <body>
 	<center>
 		<h1>AHORCADO XP</h1>
-		<form>
-			
+		<form action="/procesar" method="post">
+			<label for="letra_ingresada">LETRA:</label>
+			<input type="text" name="letra_ingresada">
+			<input type="submit" value="ENVIAR">
 		</form>
 		<h3>Palabara a buscar:</h3>
 		<p><%= session['palabra'] %></p>
+
 		
 	</center>
 </body>
