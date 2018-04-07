@@ -3,9 +3,14 @@
 <head>
 	<title></title>
 	<style type="text/css">
-		p { 
-			font-size: 48px;
-			color: red;
+		.prrafo { 
+			font-size: 70px;
+			color: green;
+		 }
+
+		 .letrasmal{
+		 	font-size: 60px;
+		 	color: red;
 		 }
 	</style>
 </head>
@@ -18,10 +23,13 @@
 			<input type="submit" value="ENVIAR">
 		</form>
 		<h3>Palabara a buscar:</h3>
-		<p><%= session['palabra'] %></p> <br><br><br>
+		<p class="prrafo"><%= session['palabra'] %></p> <br><br><br>
 		
 		<h3>Faltas:</h3>
-		<p><%= session['faltas'] %></p>
+		<p class="letrasmal"><%= session['faltas'] %></p>
+
+		<h3>Letras no encontradas:</h3>
+		<p class="letrasmal" ><%= session['letrasmal'] %></p>
 		
 	</center>
 </body>

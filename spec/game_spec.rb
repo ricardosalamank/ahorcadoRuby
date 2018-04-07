@@ -58,6 +58,18 @@ describe Game do
 		game.procesar "9"
 		expect(game.resultado).to eq "PERR-"
 	end
+	it "cuando ingrese una letra A, luego, G, luego O, luego H, luego Z, luego Q, luego F, luego U" do
+		game = Game.new
+		game.procesar "A"
+		game.procesar "G"
+		game.procesar "O"
+		game.procesar "H"
+		game.procesar "Z"
+		game.procesar "Q"
+		game.procesar "F"
+		game.procesar "U"
+		expect(game.resultado_faltas).to eq "AHORCADO PERDISTE"
+	end
 end
 # PERRY
 # El juego de iniciar en ----- 

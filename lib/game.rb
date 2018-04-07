@@ -30,10 +30,16 @@ class Game
 
 	def resultado 
 		resultado = @encontrados.join()
+		if (resultado == "PERRY") 
+			resultado = "PERRY GANASTE"
+		end
 		return resultado
 	end
 
 	def resultado_faltas
+		if (@mensaje == "AHORCADO") 
+			@mensaje = "AHORCADO PERDISTE"
+		end
 		return @mensaje
 	end
 

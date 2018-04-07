@@ -50,3 +50,22 @@ Scenario: cuando ingrese una letra A, luego, G, luego O
 	And inicio el juego
 	Then debo ver "AHO"
 
+Scenario: cuando ingrese una letra A, luego, G, luego O, luego H, luego Z, luego Q, luego F, luego U
+	Given que abri la app
+	And ingreso la letra "A" en el campo texto
+	And inicio el juego
+	And ingreso la letra "G" en el campo texto
+	And inicio el juego
+	And ingreso la letra "O" en el campo texto
+	And inicio el juego
+	And ingreso la letra "H" en el campo texto
+	And inicio el juego
+	And ingreso la letra "Z" en el campo texto
+	And inicio el juego
+	And ingreso la letra "Q" en el campo texto
+	And inicio el juego
+	And ingreso la letra "F" en el campo texto
+	And inicio el juego
+	And ingreso la letra "U" en el campo texto
+	And inicio el juego
+	Then debo ver "AHORCADO PERDISTE"
