@@ -23,7 +23,7 @@ Scenario: cuando ingrese una letra A la debo ver en la palabra
 	Given que abri la app
 	And ingreso la letra "A" en el campo texto
 	And inicio el juego
-	Then debo ver "-----"
+	Then debo ver "-E---"
 
 
 

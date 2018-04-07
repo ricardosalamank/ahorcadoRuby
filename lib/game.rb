@@ -11,6 +11,12 @@ class Game
 				ENCONTRADOS[key] = CADENA[key] 
 			end   
 		end
+	
+	end
+
+	def resultado 
 		resultado = ENCONTRADOS.join()
+		return resultado
+		
 	end
 end
