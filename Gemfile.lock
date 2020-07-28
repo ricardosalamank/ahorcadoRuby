@@ -33,7 +33,7 @@ GEM
     erubis (2.7.0)
     gherkin (4.0.0)
     hirb (0.7.3)
-    json (2.0.2)
+    json (2.3.1)
     mime-types (3.1)
       mime-types-data (~> 3.2015)
     mime-types-data (3.2016.0521)
